@@ -1,5 +1,5 @@
 .section__creation {
-    background-image: url("../images/violin_bck.jpg");
+    background-image: url("../../images/violin_bck.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -41,5 +41,8 @@
 @media (max-width: 640px) {
     .iframe-youtube {
         width: 100%;
+    }
+    .creation__youtube-video-container{
+        padding: 50px 10px 25px 10px;
     }
 }

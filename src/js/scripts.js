@@ -22,6 +22,7 @@ if (window.innerWidth <= 500) {
 
     const hide = () => {
         nav.classList.remove('nav__list--block');
+        hamburger.classList.remove('anmate');
     };
 
     const links = [ ...document.querySelectorAll('.clicked') ];

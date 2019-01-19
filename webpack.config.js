@@ -1,6 +1,8 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   output: {
@@ -53,6 +55,14 @@ module.exports = {
     }),
     new ExtractTextPlugin(
       { filename: 'style.css' }
-    )
-  ]
-};
+    ),
+    new webpack.optimize.ModuleConcatenationPlugin()
+
+  ],
+  optimization: {
+    minimize: true,
+    minimizer: [ new UglifyJsPlugin({
+      include: /\.min\.js$/
+    }) ]
+}
+}

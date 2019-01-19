@@ -1,0 +1,121 @@
+.section__contact {
+    background: #2980b9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #2c3e50, #2980b9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #2c3e50, #2980b9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+
+    position: relative;
+}
+
+
+.contact {
+    display: flex;
+    //justify-content: center;
+    align-items: stretch;
+    margin-top: 50px;
+    padding: 30px 0 150px 0;
+
+    &__header {
+        text-align: center;
+        padding: 50px 0 10px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__title {
+        position: relative;
+        font-family: 'EB Garamond', serif;
+        font-size: $headerFontsize;
+        letter-spacing: 3px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #fff;
+
+    }
+}
+
+.contact-section {
+    flex: 1 0;
+}
+.contact__figure {
+    margin-top: 10px;
+
+}
+.form__container {
+    margin-left: 30px;
+}
+
+.contact-form--group {
+    position: relative;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.contact-form--send-group {
+    display: flex;
+    justify-content: flex-end;
+   margin: 0;
+}
+
+.contact__form-label {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    font-size: 1.4rem;
+}
+
+.contact__form-content {
+    width: 100%;
+    margin-bottom: 5px;
+    border: 0;
+    border-radius: 3px;
+    padding: 40px 15px 15px;
+    background: #fff;
+
+    &::placeholder {
+        font-size: 1.6rem;
+        font-family: $normalFont;
+    }
+}
+
+.form__textarea {
+    resize: vertical;
+    height: 250px;
+}
+
+// Slider
+.contact__slider-image {
+    -webkit-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.75);
+}
+@media (max-width: 1250px) {
+    .contact-section {
+        text-align: center;
+    }
+    .contact {
+        flex-direction: column;
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+    .form__container {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 660px) {
+    .contact__slider-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+    .contact__form-content {
+    
+        &::placeholder {
+            font-size: 1.3rem;
+        }
+    }
+}

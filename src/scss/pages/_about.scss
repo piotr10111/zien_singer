@@ -1,0 +1,56 @@
+.section__about {
+    padding: 70px 0;
+    position: relative;
+}
+.about__container-text {
+    padding: 60px;
+}
+.about{
+    &__header {
+        text-align: center;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__title {
+        font-family: $headerFont;
+        font-size: $headerFontsize;
+        letter-spacing: 3px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    &__container-text {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__text {
+        position: relative;
+        font-size: 1.7rem;
+        max-width: 80%;
+        text-align: center;
+        line-height: 35px;
+        z-index: 2;
+    }
+}
+
+@media (max-width: 1050px) {
+    .about__text {
+        font-size: 1.5rem;
+        max-width: 100%;
+    }
+    .about__container-text {
+        padding: 20px;
+    }
+}
+
+.about__svg-melody {
+    transform: rotate(10deg);
+    opacity: .6;
+    width: 100px;
+    position: absolute;
+    left: 20%;
+
+}

@@ -1,0 +1,45 @@
+.section__creation {
+    background-image: url("../images/violin_bck.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.conatiner__creation--padding {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.creation__youtube-video-container{
+    padding: 100px 0 50px 0;
+}
+
+.iframe-right {
+    margin-left: 100px;
+}
+
+.creation__button-container {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1270px) {
+    .conatiner__creation--padding {
+        flex-direction: column;
+        text-align: center;
+    }
+    .creation__youtube-video-container{
+        padding: 50px 0 25px 0;
+    }
+    .iframe-right {
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width: 640px) {
+    .iframe-youtube {
+        width: 100%;
+    }
+}

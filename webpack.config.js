@@ -1,7 +1,11 @@
+const path = require('path');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
+  output: {
+    path: path.resolve('./')
+},
   module: {
     rules: [
       {

@@ -306,7 +306,9 @@ body {
 
 @media (max-width: 640px) {
   .iframe-youtube {
-    width: 100%; } }
+    width: 100%; }
+  .creation__youtube-video-container {
+    padding: 50px 10px 25px 10px; } }
 
 .paralax__image {
   background-size: cover;
